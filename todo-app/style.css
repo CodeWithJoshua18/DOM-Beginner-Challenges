@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 250px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-left: 10px;
+  }
+  
+  .filters button {
+    margin: 0 5px;
+    padding: 8px 12px;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .task.completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .task span {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .task input[type="checkbox"] {
+    transition: transform 0.2s;
+  }
+  
+  .task:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
